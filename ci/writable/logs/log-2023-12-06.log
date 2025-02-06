@@ -1,0 +1,354 @@
+CRITICAL - 2023-12-06 11:39:17 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(635): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Scenario.php(54): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 11:40:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM T_ETAPE_ETP
+        LEFT JOIN T_SCENARIO_SCE ON T_ETAPE_ETP.SCE_id = T_S...' at line 1 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(370): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(54): App\Models\Db_model->get_etape_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 11:40:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM T_ETAPE_ETP
+        LEFT JOIN T_SCENARIO_SCE ON T_ETAPE_ETP.SCE_id = T_S...' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(370): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(54): App\Models\Db_model->get_etape_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 11:52:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(104): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(269): App\Models\Db_model->get_jouer()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 11:52:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(104): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(269): App\Models\Db_model->get_jouer()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 11:55:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(104): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(269): App\Models\Db_model->get_jouer()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 11:55:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(104): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(269): App\Models\Db_model->get_jouer()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 11:59:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(104): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 11:59:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(104): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:47:54 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 104.
+ 1 APPPATH/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:48:42 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 104.
+ 1 APPPATH/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:48:59 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 104.
+ 1 APPPATH/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:51:39 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 104.
+ 1 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 12:59:30 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 425.
+ 1 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 13:02:18 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 425.
+ 1 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 13:05:24 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 425.
+ 1 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 13:06:30 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 424.
+ 1 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 13:08:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LEFT JOIN T_ETAPE_ETP USING(SCE_id)
+    LEFT JOIN T_INDICE_IDE ON T_ETAPE_ETP...' at line 2 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(424): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 13:08:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LEFT JOIN T_ETAPE_ETP USING(SCE_id)
+    LEFT JOIN T_INDICE_IDE ON T_ETAPE_ETP...' at line 2
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(424): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 13:09:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 6 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 13:09:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 6
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 13:15:33 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/Db_model.php on line 425.
+ 1 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 13:17:19 --> syntax error, unexpected ')', expecting variable (T_VARIABLE)
+in APPPATH/Models/Db_model.php on line 418.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Scenario.php(10): model()
+10 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Scenario->__construct()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 13:17:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+    WHER...' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 13:17:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+    WHER...' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(273): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 13:39:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+    WHER...' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 13:39:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+    WHER...' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 13:42:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+    WHER...' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 13:42:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+    WHER...' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 13:44:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 13:44:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(271): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 16:14:12 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(276): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 16:14:12 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(276): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 16:18:08 --> syntax error, unexpected '/'
+in APPPATH/Views/etapes.php on line 24.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Scenario.php(118): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 16:18:52 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(276): App\Models\Db_model->get_jouer_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-06 16:18:52 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(276): App\Models\Db_model->get_jouer_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

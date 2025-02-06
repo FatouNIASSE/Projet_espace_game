@@ -1,0 +1,733 @@
+CRITICAL - 2023-12-07 12:59:03 --> syntax error, unexpected ':', expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Models/Db_model.php on line 410.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Accueil.php(17): model()
+10 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Accueil->afficher()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 12:59:40 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH/Controllers/Scenario.php on line 310.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:00:33 --> Call to a member function getResultArray() on null
+in APPPATH/Models/Db_model.php on line 392.
+ 1 APPPATH/Controllers/Scenario.php(40): App\Models\Db_model->get_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:08:58 --> syntax error, unexpected ')'
+in APPPATH/Views/etapes.php on line 24.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Scenario.php(100): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:13:13 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(272): App\Models\Db_model->get_bonne_reponse()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 13:13:13 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(272): App\Models\Db_model->get_bonne_reponse()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:14:27 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(272): App\Models\Db_model->get_bonne_reponse()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 13:14:27 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(272): App\Models\Db_model->get_bonne_reponse()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:14:34 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(252): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 13:14:34 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(252): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:16:10 --> syntax error, unexpected ':', expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Models/Db_model.php on line 408.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Scenario.php(10): model()
+10 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Scenario->__construct()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:17:03 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 13:17:03 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:19:19 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 13:19:19 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:21:17 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 13:21:17 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 13:23:13 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 13:23:13 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(426): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(282): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:24:37 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Models/Db_model.php on line 458.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Scenario.php(10): model()
+10 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Scenario->__construct()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:24:41 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Models/Db_model.php on line 458.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Scenario.php(10): model()
+10 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Scenario->__construct()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:24:43 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Models/Db_model.php on line 458.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Accueil.php(17): model()
+10 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Accueil->afficher()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:51:43 --> syntax error, unexpected 'les' (T_STRING)
+in APPPATH/Models/Db_model.php on line 320.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Accueil.php(17): model()
+10 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Accueil->afficher()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 16:27:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 16:27:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 16:28:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 16:28:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 16:30:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 16:30:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 16:30:54 --> Illegal string offset 'ETP_intituler'
+in APPPATH/Views/etapes.php on line 12.
+ 1 APPPATH/Views/etapes.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22013117/public_html/V2/ci/app/Views/etapes.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(99): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 16:32:53 --> syntax error, unexpected '<'
+in APPPATH/Views/etapes.php on line 19.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Scenario.php(99): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 16:34:58 --> syntax error, unexpected '>'
+in APPPATH/Views/etapes.php on line 47.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Scenario.php(99): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 16:35:36 --> Illegal string offset 'ETP_intituler'
+in APPPATH/Views/etape_affichage.php on line 7.
+ 1 APPPATH/Views/etape_affichage.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22013117/public_html/V2/ci/app/Views/etape_affichage.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(260): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 16:36:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 16:36:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN T_RESSOURCE_RSC ON T_ETAPE_ETP.RSC_id = T_RESSOURCE_RSC.RSC_id 
+        ...' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 16:38:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ETP_code = 'ETAPE1-2'' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 16:38:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ETP_code = 'ETAPE1-2'' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 16:38:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ETP_code = 'ETAPE1-1'' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 16:38:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ETP_code = 'ETAPE1-1'' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 16:39:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ETP_code = 'ETAPE1-5'' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 16:39:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ETP_code = 'ETAPE1-5'' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(390): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(297): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 17:12:37 --> mysqli_sql_exception: Unknown column 'ETAPE1' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(285): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 17:12:37 --> Unknown column 'ETAPE1' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(425): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(285): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 18:18:31 --> Cannot redeclare App\Models\Db_model::insert_participants()
+in APPPATH/Models/Db_model.php on line 469.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-12-07 18:22:46 --> mysqli_sql_exception: Subquery returns more than 1 row in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(428): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(285): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 18:22:46 --> Subquery returns more than 1 row
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(428): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(285): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 18:32:56 --> mysqli_sql_exception: Subquery returns more than 1 row in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(428): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(286): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 18:32:56 --> Subquery returns more than 1 row
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(428): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(286): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 18:36:01 --> Invalid file: "templates/haut1.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Scenario.php(372): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->finaliser()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 18:42:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ';)' at line 1 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(468): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(352): App\Models\Db_model->set_resulat()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->finaliser()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 18:42:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ';)' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(468): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(352): App\Models\Db_model->set_resulat()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->finaliser()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 18:45:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(468): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(352): App\Models\Db_model->set_resulat()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->finaliser()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 18:45:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(468): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(352): App\Models\Db_model->set_resulat()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->finaliser()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 18:48:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(468): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(352): App\Models\Db_model->set_resulat()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->finaliser()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 18:48:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(468): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(352): App\Models\Db_model->set_resulat()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->finaliser()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:17:43 --> syntax error, unexpected '"' LIMIT 1)"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+in APPPATH/Models/Db_model.php on line 437.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Scenario.php(10): model()
+10 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Scenario->__construct()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:19:34 --> syntax error, unexpected ';', expecting ')'
+in APPPATH/Models/Db_model.php on line 437.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Scenario.php(10): model()
+10 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Scenario->__construct()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:43:44 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 360.
+ 1 SYSTEMPATH/Database/Query.php(360): substr_replace()
+ 2 SYSTEMPATH/Database/Query.php(302): CodeIgniter\Database\Query->matchSimpleBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\Query->getQuery()
+ 5 APPPATH/Models/Db_model.php(438): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/Scenario.php(289): App\Models\Db_model->get_etape_suivante()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:49:28 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 360.
+ 1 SYSTEMPATH/Database/Query.php(360): substr_replace()
+ 2 SYSTEMPATH/Database/Query.php(302): CodeIgniter\Database\Query->matchSimpleBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\Query->getQuery()
+ 5 APPPATH/Models/Db_model.php(438): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/Scenario.php(289): App\Models\Db_model->get_etape_suivante()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:53:06 --> Object of class stdClass could not be converted to string
+in APPPATH/Views/etape_affichage.php on line 26.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Scenario.php(318): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:53:50 --> Object of class stdClass could not be converted to string
+in APPPATH/Views/etape_affichage.php on line 26.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Scenario.php(318): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:55:08 --> Object of class stdClass could not be converted to string
+in APPPATH/Views/etape_affichage.php on line 26.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Scenario.php(318): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:55:15 --> Object of class stdClass could not be converted to string
+in APPPATH/Views/etape_affichage.php on line 26.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Scenario.php(318): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:55:30 --> Object of class stdClass could not be converted to string
+in APPPATH/Views/etape_affichage.php on line 26.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Scenario.php(318): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:56:06 --> Object of class stdClass could not be converted to string
+in APPPATH/Views/etape_affichage.php on line 26.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Scenario.php(318): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:59:29 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Controllers/Scenario.php on line 242.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 19:59:50 --> Call to undefined function App\Controllers\get_code_scenarios()
+in APPPATH/Controllers/Scenario.php on line 240.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 20:02:47 --> Too few arguments to function App\Models\Db_model::get_etape(), 2 passed in /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php on line 40 and exactly 3 expected
+in APPPATH/Models/Db_model.php on line 394.
+ 1 APPPATH/Controllers/Scenario.php(40): App\Models\Db_model->get_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 20:04:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE SCE_code = 'SceNAri876' AND ETP_ordre = (SELECT ETP_ordre + 1 FROM T_ET...' at line 4 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(438): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(290): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 20:04:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE SCE_code = 'SceNAri876' AND ETP_ordre = (SELECT ETP_ordre + 1 FROM T_ET...' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(438): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(290): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

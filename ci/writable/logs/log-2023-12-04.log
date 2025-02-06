@@ -1,0 +1,190 @@
+CRITICAL - 2023-12-04 11:56:02 --> syntax error, unexpected ')', expecting ']'
+in APPPATH/Controllers/Scenario.php on line 97.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 11:56:02 --> Uncaught ErrorException: chmod() has been disabled for security reasons in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Log/Handlers/FileHandler.php:119
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Log/Handlers/FileHandler.php(119): chmod()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Log/Logger.php(294): CodeIgniter\Log\Handlers\FileHandler->handle()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Common.php(810): CodeIgniter\Log\Logger->log()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Debug/Exceptions.php(133): log_message()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+ParseError
+syntax error, unexpected ')', expecting ']'
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(900): class_exists()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH/Log/Handlers/FileHandler.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 11:57:02 --> syntax error, unexpected ')', expecting ']'
+in APPPATH/Controllers/Scenario.php on line 97.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 11:58:23 --> Call to a member function get_profil() on null
+in APPPATH/Controllers/Scenario.php on line 68.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 12:36:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-04 12:36:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 12:42:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-04 12:42:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 12:44:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-04 12:44:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 12:44:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-04 12:44:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 12:48:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-04 12:48:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 12:56:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-04 12:56:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 13:03:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-04 13:03:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(295): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

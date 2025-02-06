@@ -1,0 +1,70 @@
+CRITICAL - 2023-11-25 14:22:02 --> chmod() has been disabled for security reasons
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Session/Handlers/FileHandler.php(147): chmod()
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read()
+ 4 SYSTEMPATH/Session/Session.php(919): session_start()
+ 5 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+10 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+12 APPPATH/Views/connexion/compte_connecter.php(2): session()
+13 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22013117/public_html/V1/ci/app/Views/connexion/compte_connecter.php')
+14 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+16 APPPATH/Controllers/Compte.php(151): view()
+17 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+18 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+19 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+20 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 14:22:02 --> Uncaught ErrorException: chmod() has been disabled for security reasons in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Log/Handlers/FileHandler.php:119
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Log/Handlers/FileHandler.php(119): chmod()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Log/Logger.php(294): CodeIgniter\Log\Handlers\FileHandler->handle()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Common.php(810): CodeIgniter\Log\Logger->log()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Debug/Exceptions.php(133): log_message()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+chmod() has been disabled for security reasons
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Session/Handlers/FileHandler.php(147): chmod()
+#2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Session/Session.php(919): session_start()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Config/Services.php(693): CodeIgniter\Session\Session->start()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+#9 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+#11 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Views/connexion/compte_connecter.php(2): session()
+#12 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/View/View.php(228): include('/home/2023DIFAL...')
+#13 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#14 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Common.php(1190): CodeIgniter\View\View->render()
+#15 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Compte.php(151): view()
+#16 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+#17 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#18 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#19 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#20 {main}
+in SYSTEMPATH/Log/Handlers/FileHandler.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-25 14:25:46 --> Call to a member function connect_compte() on null
+in APPPATH/Controllers/Compte.php on line 135.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 14:26:22 --> Call to a member function connect_compte() on null
+in APPPATH/Controllers/Compte.php on line 135.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

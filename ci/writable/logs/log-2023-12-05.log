@@ -1,0 +1,295 @@
+ERROR - 2023-12-05 10:24:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(303): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 10:24:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(303): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 10:27:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(303): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 10:27:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(303): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(123): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 10:34:58 --> Cannot redeclare App\Models\Db_model::id_compte()
+in APPPATH/Models/Db_model.php on line 294.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-12-05 10:35:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(311): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(125): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 10:35:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(311): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(125): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 11:06:12 --> Cannot use object of type stdClass as array
+in APPPATH/Views/connexion/compte_org.php on line 19.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(169): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->acceuil()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 11:20:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(311): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(125): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 11:20:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(311): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(125): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 12:31:38 --> syntax error, unexpected 'T_INDICE_IDE' (T_STRING)
+in APPPATH/Models/Db_model.php on line 320.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/Config/Factories.php(283): class_exists()
+ 6 SYSTEMPATH/Config/Factories.php(202): CodeIgniter\Config\Factories::locateClass()
+ 7 SYSTEMPATH/Config/Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance()
+ 8 SYSTEMPATH/Common.php(827): CodeIgniter\Config\Factories::__callStatic()
+ 9 APPPATH/Controllers/Compte.php(10): model()
+10 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Compte->__construct()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 13:16:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(311): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Scenario.php(125): App\Models\Db_model->set_scenarios()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 13:16:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'univers','A',3,'univer.jpg')' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(311): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(125): App\Models\Db_model->set_scenarios()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 13:55:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN T_ETAPE_ETP ON T_INDICE_IDE.ETP_id = T_ETAPE_ETP.ETP_id
+    INNER ...' at line 3 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(324): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 13:55:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN T_ETAPE_ETP ON T_INDICE_IDE.ETP_id = T_ETAPE_ETP.ETP_id
+    INNER ...' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(324): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 13:59:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LEFT JOIN T_ETAPE_ETP ON T_INDICE_IDE.ETP_id = T_ETAPE_ETP.ETP_id
+    LEFT JO...' at line 3 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(324): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 13:59:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LEFT JOIN T_ETAPE_ETP ON T_INDICE_IDE.ETP_id = T_ETAPE_ETP.ETP_id
+    LEFT JO...' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(324): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 14:16:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LEFT JOIN T_ETAPE_ETP ON T_INDICE_IDE.ETP_id = T_ETAPE_ETP.ETP_id
+    LEFT JO...' at line 3 in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(324): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 14:16:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LEFT JOIN T_ETAPE_ETP ON T_INDICE_IDE.ETP_id = T_ETAPE_ETP.ETP_id
+    LEFT JO...' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(324): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 14:29:46 --> mysqli_sql_exception: Unknown column 'T_RESSOURCE_RSC.ETP_id' in 'on clause' in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(337): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 14:29:46 --> Unknown column 'T_RESSOURCE_RSC.ETP_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(337): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 14:35:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`e22013117_db2`.`T_RESULTAT_RLT`, CONSTRAINT `fk_T_RESULTAT_RLT_T_SCENARIO_SCE1` FOREIGN KEY (`SCE_id`) REFERENCES `T_SCENARIO_SCE` (`SCE_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(321): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 14:35:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`e22013117_db2`.`T_RESULTAT_RLT`, CONSTRAINT `fk_T_RESULTAT_RLT_T_SCENARIO_SCE1` FOREIGN KEY (`SCE_id`) REFERENCES `T_SCENARIO_SCE` (`SCE_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(321): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 14:52:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`e22013117_db2`.`T_RESULTAT_RLT`, CONSTRAINT `fk_T_RESULTAT_RLT_T_SCENARIO_SCE1` FOREIGN KEY (`SCE_id`) REFERENCES `T_SCENARIO_SCE` (`SCE_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Models/Db_model.php(321): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V1/ci/app/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+#5 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+#6 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 14:52:28 --> Cannot delete or update a parent row: a foreign key constraint fails (`e22013117_db2`.`T_RESULTAT_RLT`, CONSTRAINT `fk_T_RESULTAT_RLT_T_SCENARIO_SCE1` FOREIGN KEY (`SCE_id`) REFERENCES `T_SCENARIO_SCE` (`SCE_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(321): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(410): App\Models\Db_model->supprimerScenario()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->supprimer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 21:58:09 --> Call to a member function get_bonne_reponse() on null
+in APPPATH/Controllers/Scenario.php on line 195.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 21:59:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(635): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Scenario.php(196): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-05 22:00:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ';)' at line 1 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(388): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(196): App\Models\Db_model->get_etape_suivante()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-05 22:00:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ';)' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(388): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(196): App\Models\Db_model->get_etape_suivante()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-05 22:30:09 --> Call to a member function getValidated() on null
+in APPPATH/Controllers/Scenario.php on line 192.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->franchir_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

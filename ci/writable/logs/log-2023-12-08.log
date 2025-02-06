@@ -1,0 +1,102 @@
+ERROR - 2023-12-08 11:41:01 --> mysqli_sql_exception: Unknown column 'Egpm56GH' in 'where clause' in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(44): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-08 11:41:01 --> Unknown column 'Egpm56GH' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(44): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-08 11:46:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Egpm56GH''' at line 5 in /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22013117/public_html/V2/ci/app/Controllers/Scenario.php(44): App\Models\Db_model->get_etape()
+#5 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+#6 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22013117/public_html/V2/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22013117/public_html/V2/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-08 11:46:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Egpm56GH''' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(399): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(44): App\Models\Db_model->get_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etapes()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 13:31:08 --> Could not move file "phpXeya7z" to "images_scenario/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 158.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed()
+ 2 APPPATH/Controllers/Scenario.php(170): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 13:33:06 --> Could not move file "php1xzQ0q" to "images_scenario/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 158.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed()
+ 2 APPPATH/Controllers/Scenario.php(170): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 13:37:38 --> Could not move file "phpLOT4iU" to "images/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 158.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed()
+ 2 APPPATH/Controllers/Compte.php(125): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 13:43:45 --> Could not move file "phpz4AfBA" to "images_scenario/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 158.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(158): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed()
+ 2 APPPATH/Controllers/Scenario.php(170): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 14:54:35 --> syntax error, unexpected ')', expecting ']'
+in APPPATH/Controllers/Scenario.php on line 181.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 14:57:32 --> syntax error, unexpected ''is_image[fichier]'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH/Controllers/Scenario.php on line 150.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 16:18:09 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH/Controllers/Scenario.php on line 281.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
